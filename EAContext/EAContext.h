@@ -12,6 +12,7 @@
 
 #define CONNECT_PREVIOUSLY
 
+/* Connection Type (Data Source) */
 typedef enum
 {
     EAConnectionTypeBLE = 1,
@@ -19,6 +20,7 @@ typedef enum
     
 }EAConnectionType;
 
+/* ErrorCode */
 typedef enum
 {
     EASportTypeRAWData = 1      << 1,
@@ -31,10 +33,6 @@ typedef enum
 }EASportType;
 
 
-
-//#define EA_EXTERN extern
-
-//EA_EXTERN void (^EADeviceConnectionCompletion)(NSError *error);
 typedef void (^EADeviceConnectionCompletion)(NSError *error);
 
 @class EAContext;
@@ -49,6 +47,11 @@ typedef void (^EADeviceConnectionCompletion)(NSError *error);
 
 @interface EAContext : NSObject
 
+/*!
+ *  @property delegate
+ *
+ *  @discussion The delegate object that will receive device events.
+ */
 @property (assign, nonatomic) id<EAContextDelegate> delegate;
 @property (readonly, nonatomic) EAConnectionType connectionType;
 @property (readonly, nonatomic) EASportType sportType;
