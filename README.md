@@ -1,10 +1,8 @@
 
-![Atomax icon](http://www.atomaxinc.com/ref_images/atomaxlogocolormain.png
-)
+![Atomax icon](http://www.atomaxinc.com/ref_images/atomaxlogocolormain.png)
 
 #EAContext API
-=====================
-
+===
 
 
 EA stands for "Exercise Analytic", which is used for gathering 3-axies accelerometer data, gyroscope data and other useful information from [**Atomax**](http://www.atomaxinc.com/) curo sensor and also from iPhone sensor.
@@ -18,7 +16,7 @@ You should take a look at EAContext.h file. There are specific descriptions for 
 
 
 ##Deployment
----------
+---
 1. Open the EAContextSample/EAContext/ folder and drag those of the .h files and libEAContext.a file to your project.
 
 2. In Build Phases add 3 frameworks as follows:
@@ -27,7 +25,7 @@ You should take a look at EAContext.h file. There are specific descriptions for 
 	* GLKit.framwwork
 
 ##Get Started
----------
+---
 ####Initialize
 Initialize the instance of EAContext class and choose the connection type and resired data type. Here, we select BLE to access our sensor and want a raw data back(means accelerometer data, gyroscope data, gravity, and user acceleration).
 
@@ -67,15 +65,15 @@ This method will display a model view controller that list all the discovered pr
 When an error occurs, callback method will send a NSError object containing an error code, please see EAError.h file.
 
 ##Example: EAContextSample
----------------
+---
 In EAContextSample project, we demostrate you a simple sample code to access the curo sensor data. You will see 
 how we get the accelerometer, gyro, graviry, and user acceleration data then display on the screen. 
 
 
 ##Additional Notes
---------------
+---
 Created by Ryan Chen, engineer at Atomax, on 14/04/30.
 Copyright (c) 2014年 Atomax Inc. All rights reserved.
 
 Any feedback is welcomed, please send feekback to 
-<service@atomaxinc.com> or ![facebook](http://www.atomaxinc.com/ref_images/facebook.png)
+<service@atomaxinc.com> or [![facebook](http://www.atomaxinc.com/ref_images/facebook.png)](https://www.facebook.com/pages/Atomax/154955394547353)
