@@ -18,7 +18,7 @@ typedef enum
     
 }EAConnectionType;
 
-/* ErrorCode */
+/* Sport Type Code */
 typedef enum
 {
     EASportTypeRAWData = 1      << 1,
@@ -159,9 +159,9 @@ typedef void (^EADeviceConnectionCompletion)(NSError *error);
 - (void)disconnect;
 
 /*!
- *  @property isConnected
+ *  @method isConnected
  *
- *  @discussion Current connection status.
+ *  @discussion Query current connection status.
  */
 - (BOOL)isConnected;
 
